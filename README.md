@@ -31,7 +31,7 @@ METAMASK_PRIVATE_KEY="Metamask_private_key"
 
 <br/>
 
-### `SimpleCardNFTFactory.sol` 파일을 compile하여 `typechain-types` 폴더 생성
+### `UnemployedCardNFTFactory.sol` 파일을 compile하여 `typechain-types` 폴더 생성
 
 Visual Studio Code의 터미널에서
 
@@ -46,7 +46,7 @@ npx hardhat compile
 
 ### mint and trasfer 해보기
 
-제가 이미 sepolia network에 SimpleCardNFTFactory contract를 배포해놓은 상황입니다.(`scripts/deploy.ts`를 이용해)<br/>
+제가 이미 sepolia network에 UnemployedCardNFTFactory contract를 배포해놓은 상황입니다.(`scripts/deploy.ts`를 이용해)<br/>
 그리고 그 배포한 contract 주소를 `scripts/deploy.ts`에 넣어놓았습니다.<br/>
 따라서 따로 contract를 배포하실 필요는 없고 `scripts/mintAndTransfer.ts`만 실행해주시면 됩니다.<br/>
 실행하는 방법은 아래와 같습니다.<br/>
