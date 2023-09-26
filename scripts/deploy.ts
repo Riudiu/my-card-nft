@@ -1,17 +1,17 @@
 require("dotenv").config();
 import { ethers } from "hardhat";
-import { SimpleCardNFTFactory } from "../typechain-types";
+import { UnemployedCardNFTFactory } from "../typechain-types";
 
 async function main() {
-  const SimpleCardNFTFactoryFactory = await ethers.getContractFactory(
-    "SimpleCardNFTFactory"
+  const UnemployedCardNFTFactory_factory = await ethers.getContractFactory(
+    "UnemployedCardNFTFactory"
   );
-  const simpleCardNFTFactory: SimpleCardNFTFactory =
-    (await SimpleCardNFTFactoryFactory.deploy()) as SimpleCardNFTFactory;
+  const unemployedCardNFTFactory: UnemployedCardNFTFactory =
+    (await UnemployedCardNFTFactory_factory.deploy()) as UnemployedCardNFTFactory;
 
   console.log(
-    "SimpleCardNFTFactory deployed to:",
-    await simpleCardNFTFactory.address
+    "UnemployedCardNFTFactory deployed to:",
+    await unemployedCardNFTFactory.address
   );
 }
 
@@ -23,4 +23,4 @@ main()
   });
 
 // 정상적으로 sepolia network에 배포가 되었다면 아래와 같이 출력됨. 배포 주소는 다 다른 것이 정상.
-// SimpleCardNFTFactory deployed to: 0x806E846858E752eb9f709e9EB3803b9217fbe4d0
+// UnemployedCardNFTFactory deployed to: 0x6F0d2D9bc7339A204B63e71b87656d189360768f
