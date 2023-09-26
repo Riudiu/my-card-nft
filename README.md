@@ -64,7 +64,7 @@ npx hardhat run --network sepolia scripts/mintAndTransfer.ts
 [Sepolia Testnet Explorer](https://sepolia.etherscan.io, "sepolia testnet explorer link")
 <br/>
 여기 검색창에서 제가 배포한 컨트랙트 주소인<br/>
-`0x806E846858E752eb9f709e9EB3803b9217fbe4d0`<br/>
+`0x6F0d2D9bc7339A204B63e71b87656d189360768f`<br/>
 를 검색하시면 트랜잭션 내역이 뜹니다.<br/>
 여기서 트랜잭션이 잘 이루어졌는지 확인하실 수 있습니다.<br/>
 
